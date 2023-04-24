@@ -1,8 +1,9 @@
 # Caedendi's Simple Loot Filter for D2RMM
 
-Adds a customizable loot filter to D2R using D2RMM. 
+_See also: [Caedendi's Extended Loot Filter for D2RMM](https://github.com/Caedendi/D2RMM-Loot-Filter-Extended)_
 
-Shortens item names or practically hides them by changing them into _blank_. Emphasizes important items. See the full feature list below.
+Adds a simple customizable loot filter to Diablo 2: Resurrected using D2RMM. <br>
+Cleans up item names to remove clutter and emphasizes important items. For the full feature list, see below.
 
 ## Table of Contents
 
@@ -17,57 +18,56 @@ Shortens item names or practically hides them by changing them into _blank_. Emp
 
 ## Features
 
-- This mod was written in a way that allows for easy item name customizations by end users.
-  - Just open the mod.js file in Notepad and change whatever item name into what you'd like it to be
+- **Easy item name customization:** users can easily apply their own custom naming.
+  - To change an item name, edit the mod.js file in Notepad and change it into what you'd like.
+  - To hide an item, change its new name to HIDDEN. The value of HIDDEN (amount of spaces) can be set in the D2RMM settings manager.
   - Don't forget to reload and apply in D2RMM!
-- All mods are optional and can be toggled in the D2RMM settings
-  - Untoggling everything means no modding will be applied
-- Shortens and colors gold tooltip
-- Show rune numbers and emphasize better runes
-- Shorten item names for junk and gems
-- Emphasized items for quests, Pandemonium event (ubers), essences and token
-- Item tooltip customization:
+- **Completely optional:** untoggling everything means no modding will be applied
+- **Gold:** shortens & colors the tooltip
+- **Runes:** shortens the tooltip, shows rune numbers and highlights the better runes
+- **Items:** shortens, colors and highlights the tooltips of potions, scrolls/tomes, bolts/arrows, gems, quest items and endgame items
+  - endgame items include Essences, Tokens, Pandemonium keys, Organs and the Standard of Heroes
+- **Jewelry:** (BUGGED, so disabled)
+  - To enable, remove // from lines 120-126 in mod.js
+  - if enabled, crafted/rare/set/unique rings, amulets, jewels and charms also have blue tooltips
+- **Item tooltip customization:**
   - Change the background opacity
   - Change the font size
 
 ## Installation
 
-- Download and install [D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/169), then run it
-- Download and extract this mod folder to /D2RMM/mods/
-- See D2RMM instructions on how to configure and enable
+- Download and install [D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/169), then run it.
+- Download and extract this mod folder to /D2RMM/mods/.
+- See D2RMM instructions on how to configure and enable.
+- Play the game!
 
 ## Recommended Mods
 
-I recommend you use these mods in addition to this:
+In addition to this mod, I recommend you also use the D2RMM mods below:
 
-- [Disable Battle.net](https://github.com/olegbl/d2rmm.mods) by olegbl
-- [Settings Font Fix](https://www.nexusmods.com/diablo2resurrected/mods/200) by olegbl
-- [LightPillar](https://www.nexusmods.com/diablo2resurrected/mods/197) by qhu91it
-- [Skip Intro Videos](https://www.nexusmods.com/diablo2resurrected/mods/179) by olegbl
-- [Towns QoL Changes](https://www.nexusmods.com/diablo2resurrected/mods/310) by night0wl117
-- [Town Cast](https://www.nexusmods.com/diablo2resurrected/mods/183) by olegbl _(note! allows teleporting past Jerhyn during the questline)_
-- [Show Item Level](https://www.nexusmods.com/diablo2resurrected/mods/174) by olegbl
-- [Short Quality Prefixes]() by Jobus _(until I have added it to this mod)_
+| Mod                                                                             | Creator     | Notes                                                                                      |
+|---------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------|
+| [Disable Battle.net](https://github.com/olegbl/d2rmm.mods)                      | olegbl      | So you don't accidentally get yourself banned.                                             |
+| [Settings Font Fix](https://www.nexusmods.com/diablo2resurrected/mods/200)      | olegbl      | In case any mod touches __profilehd_ and screws up the font size in the settings menu.     |
+| [LightPillar](https://www.nexusmods.com/diablo2resurrected/mods/197)            | qhu91it     | Add an awesome effect when certain items drop.                                             |
+| [Skip Intro Videos](https://www.nexusmods.com/diablo2resurrected/mods/179)      | olegbl      | On startup, gets you straight to the title screen.                                         |
+| [Towns QoL Changes](https://www.nexusmods.com/diablo2resurrected/mods/310)      | night0wl117 | Move town starting points, TP locations and Cain's position in Act 5.                      |
+| [Town Cast](https://www.nexusmods.com/diablo2resurrected/mods/183)              | olegbl      | TP & buff in town. _(BREAKING: allows teleporting past Jerhyn during the Act 2 questline)_ |
+| [Show Item Level](https://www.nexusmods.com/diablo2resurrected/mods/174)        | olegbl      | Adds the ilvl to the tooltips of all items with an ilvl.                                   |
+| [Short Quality Prefixes](https://www.nexusmods.com/diablo2resurrected/mods/214) | Jobus       | Shortens the Superior/Inferior prefixes _(until I have added it to this mod)_.             |
 
-## ToDo
+## Roadmap
 
-- Fix bug with charms, rings, amulets and jewels always showing as blue, even when Rare or Unique
+- Fix known bugs:
+  - Enabling jewelry turns crafted/rare/set/unique jewelry blue.
+- Add features:
   - different emphasis for unique charms, rare jewels and facets (rainbow color)
-- Integrate [Show Item Quality for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/351) or [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214/?tab=files&category=archived)
-- Split items toggle into:
-  - Junk
-    - optional: hide Bolts & Arrows by changing name into _blank_
-  - Gems
-  - Rings & Amulets
-  - Jewels
-  - Charms
-  - Quest Items
-  - Pandemonium Event
-  - Token & Essences
+  - Integrate [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214/?tab=files&category=archived) or [Show Item Quality for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/351)
 
 ## Credits
 
-This loot filter mod is based on code from existing mods and inspired by existing styles. I have added code optimizations, multiple toggles and my own personal flair and preferences, so remnants of other people's codes remain. I have tried to list the credits as accurately as I can. If you see any of your own code in this mod and it isn't credited, please send me a message.
+This loot filter mod is based on code from existing mods and inspired by existing styles. I have added code optimizations, toggles and my own personal flair and preferences. <br>
+Remnants of other people's codes remain, so I have tried to list the credits as accurately as I can. If you see any of your own code in this mod and it isn't credited, please send me a message.
 
 Many thanks to:
 
@@ -78,11 +78,10 @@ Many thanks to:
   - his [example mods](https://github.com/olegbl/d2rmm.mods) in general
   - his [Short Potion Names](https://www.nexusmods.com/diablo2resurrected/mods/177) mod for the list of colors
 
-### Loot Filter Style
+### Filter Style
 - [Path of Diablo filters](https://pathofdiablo.com/wiki/index.php?title=List_of_Loot_Filters) for removing all that clutter on Path of Diablo and inspiring me to create this loot filter for D2R
-  - Mainly [Darkgale](https://www.twitch.tv/darkgale)'s filter called [Filtergale](https://www.reddit.com/r/pathofdiablo/comments/i9hdw7/filtergale/) ([download](https://greendu.de/s/ZbDwHekAg3rmeRB/download?path=%2F&files=item.filter))
+  - Mainly [Darkgale](https://www.twitch.tv/darkgale)'s filter called [Filtergale](https://www.reddit.com/r/pathofdiablo/comments/i9hdw7/filtergale/) ([download](https://greendu.de/s/ZbDwHekAg3rmeRB/download?path=%2F&files=item.filter)) regarding styling
 - [Practical Item Filter for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/317)
-- 
 
 ## License/Permissions
 
@@ -90,4 +89,4 @@ This code is licensed under GPL.
 
 You are free to use and distribute all code in this mod, as long as you ask for permission (and permission is given), it stays open source, free of charge and all due credit is given. 
 
-If you are trying to profit off this mod in any way, then you're a dick and not allowed to use this code.
+If you are trying to profit off this mod in any way, then you're a dick and forbidden from using this code.
