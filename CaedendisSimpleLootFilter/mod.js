@@ -6,16 +6,17 @@
 ////=============================================////
 ////=============================================////
 
+//===============//
+//   Constants   //
+//===============//
+
 // File paths
 const profileHdPath = 'global\\ui\\layouts\\_profilehd.json';
 const itemRunesPath = 'local\\lng\\strings\\item-runes.json';
 const itemNamesPath = 'local\\lng\\strings\\item-names.json';
 const itemNameAffixesPath = 'local\\lng\\strings\\item-nameaffixes.json';
 
-
-//=====================//
-//   Color Constants   //
-//=====================//
+// Color
 const COLOR_PREFIX = 'ÿc';
 
 const WHITE = `${COLOR_PREFIX}0`;
@@ -54,6 +55,9 @@ const LIGHTGOLD1 = `${COLOR_PREFIX}H`;
 const PINK = `${COLOR_PREFIX}O`;
 const LIGHTPINK = `${COLOR_PREFIX}G`;
 const PURPLE = `${COLOR_PREFIX};`;
+
+// Naming
+const HIDDEN = '' + ' '.repeat(config.HiddenItemTooltipSize);
 
 
 //=============//
@@ -168,13 +172,13 @@ const customItems = {
   //=======================//
   //   Pandemonium Event   //
   //=======================//
-  pk1: `${RED}***  ${ORANGE}Pandemonium Key 1  ${RED}***`,  // Pandemonium Key 1 Key of Destruction
-  pk2: `${RED}***  ${ORANGE}Pandemonium Key 2  ${RED}***`,  // Pandemonium Key 2 Key of Hate
-  pk3: `${RED}***  ${ORANGE}Pandemonium Key 3  ${RED}***`,  // Pandemonium Key 3 Key of Terror
-  dhn: `${RED}***  ${ORANGE}Diablo's Horn  ${RED}***`,    // Diablo's Horn
-  bey: `${RED}***  ${ORANGE}Baal's Eye  ${RED}***`,       // Baal's Eye
-  mbr: `${RED}***  ${ORANGE}Mephisto's Brain  ${RED}***`, // Mephisto's Brain
-  std: `${RED}* ${GOLD}Standard of Heroes ${RED}*`,     // Standard of Heroes
+  pk1: `${RED}***  ${ORANGE}Pandemonium Key 1  ${RED}***`, // Pandemonium Key 1 Key of Destruction
+  pk2: `${RED}***  ${ORANGE}Pandemonium Key 2  ${RED}***`, // Pandemonium Key 2 Key of Hate
+  pk3: `${RED}***  ${ORANGE}Pandemonium Key 3  ${RED}***`, // Pandemonium Key 3 Key of Terror
+  dhn: `${RED}***  ${ORANGE}Diablo's Horn  ${RED}***`,     // Diablo's Horn
+  bey: `${RED}***  ${ORANGE}Baal's Eye  ${RED}***`,        // Baal's Eye
+  mbr: `${RED}***  ${ORANGE}Mephisto's Brain  ${RED}***`,  // Mephisto's Brain
+  std: `${RED}* ${GOLD}Standard of Heroes ${RED}*`,        // Standard of Heroes
   
   //======================//
   //   Token & Essences   //
@@ -183,7 +187,7 @@ const customItems = {
   ceh: `${RED}* ${ORANGE}Charged Essense of Hatred ${RED}*`,        // Charged Essense of Hatred
   bet: `${RED}* ${ORANGE}Burning Essence of Terror ${RED}*`,        // Burning Essence of Terror
   fed: `${RED}* ${ORANGE}Festering Essence of Destruction ${RED}*`, // Festering Essence of Destruction
-  toa: `${RED}***  ${ORANGE}Token of Absolution  ${RED}***`,          // Token of Absolution
+  toa: `${RED}***  ${ORANGE}Token of Absolution  ${RED}***`,        // Token of Absolution
 
   //=================//
   //   Quest Items   //
@@ -293,10 +297,23 @@ function applyCustomNames(path, customNames) {
 }
 
 function applyTooltipMods() {
+  if (config.Tooltip == "none")
+    return
+
   let profileHD = D2RMM.readJson(profileHdPath);
 
-  profileHD.TooltipStyle.inGameBackgroundColor = [0, 0, 0, config.tooltipOpacity]; // [R, G, B, opacity]
-  profileHD.TooltipFontSize = config.tooltipSize;
+  switch (config.Tooltip) {
+    case "all":
+      profileHD.TooltipStyle.inGameBackgroundColor = [0, 0, 0, config.TooltipOpacity]; // [R, G, B, opacity]
+      profileHD.TooltipFontSize = config.TooltipSize;
+      break;
+    case "opacity":
+      profileHD.TooltipStyle.inGameBackgroundColor = [0, 0, 0, config.TooltipOpacity]; // [R, G, B, opacity]
+      break;
+    case "size":
+      profileHD.TooltipFontSize = config.TooltipSize;
+      break;
+  }
   
   D2RMM.writeJson(profileHdPath, profileHD);
   D2RMM.copyFile('hd', 'hd', true);

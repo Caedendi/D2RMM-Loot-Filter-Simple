@@ -27,14 +27,29 @@
       "defaultValue": true
     },
     {
-      "id": "isModifyTooltipEnabled",
-      "type": "checkbox",
-      "name": "Modify Tooltip",
-      "description": "Modifies the size and background opacity of the tooltip for items on the ground and in the inventory.",
-      "defaultValue": false
+      "id": "HiddenItemTooltipSize",
+      "type": "number",
+      "name": "Tooltip width for hidden items",
+      "description": "Sets the width of the tooltip for hidden items by adding spaces if set to > 0. Max 100.",
+      "defaultValue": 0,
+      "minValue": 0,
+      "maxValue": 100
     },
     {
-      "id": "tooltipOpacity",
+      "id": "Tooltip",
+      "type": "select",
+      "name": "Tooltip mods",
+      "description": "Modifies the size and background opacity of the tooltip for items on the ground and in the inventory.",
+      "defaultValue": "none",
+      "options": [
+        { "label": "Disable", "value": "none" },
+        { "label": "Opacity & Size", "value": "all" },
+        { "label": "Opacity", "value": "opacity" },
+        { "label": "Size", "value": "size" }
+      ]
+    },
+    {
+      "id": "TooltipOpacity",
       "type": "number",
       "minValue": 0.1,
       "maxValue": 1,
@@ -43,7 +58,7 @@
       "defaultValue": 0.75
     },
     {
-      "id": "tooltipSize",
+      "id": "TooltipSize",
       "type": "number",
       "minValue": 20,
       "maxValue": 50,
