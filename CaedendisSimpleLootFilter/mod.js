@@ -270,20 +270,17 @@ const customRunes = {
 
 function applyLootFilter() {
   applyItemNameMods();
-
-  if (config.isModifyTooltipEnabled) {
-    applyTooltipMods();
-  }
+  applyTooltipMods();
 }
 
 function applyItemNameMods() {
-  if (config.isGoldEnabled) {
+  if (config.IsGoldEnabled) {
     applyCustomNames(itemNameAffixesPath, customAffixes);
   }
-  if (config.isRunesEnabled) {
+  if (config.IsRunesEnabled) {
     applyCustomNames(itemRunesPath, customRunes);
   }
-  if (config.isItemsEnabled) {
+  if (config.IsItemsEnabled) {
     applyCustomNames(itemNamesPath, customItems);
   }
 }

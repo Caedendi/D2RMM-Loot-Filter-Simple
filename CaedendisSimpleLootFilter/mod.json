@@ -1,29 +1,29 @@
 {
   "name": "Caedendi's Simple Loot Filter",
-  "description": "A simple loot filter .",
+  "description": "Adds a simple customizable loot filter to Diablo 2: Resurrected using D2RMM.",
   "author": "Caedendi",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/360",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "config": [
     {
-      "id": "isGoldEnabled",
+      "id": "IsGoldEnabled",
       "type": "checkbox",
       "name": "Gold",
-      "description": "Applies the loot filter to gold.",
+      "description": "Shrink the \"Gold\" affix to a gold-colored \"G\".",
       "defaultValue": true
     },
     {
-      "id": "isRunesEnabled",
+      "id": "IsRunesEnabled",
       "type": "checkbox",
       "name": "Runes",
-      "description": "Applies the loot filter to runes.",
+      "description": "Remove the \"Rune\" affix, add rune numbers and highlight important runes.",
       "defaultValue": true
     },
     {
-      "id": "isItemsEnabled",
+      "id": "IsItemsEnabled",
       "type": "checkbox",
       "name": "Items",
-      "description": "Applies the loot filter to potions, scrolls, tomes, bolts, arrows and gems.",
+      "description": "Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows, gems, essences/tokens, Pandomonium Event and quest items.",
       "defaultValue": true
     },
     {
@@ -39,7 +39,7 @@
       "id": "Tooltip",
       "type": "select",
       "name": "Tooltip mods",
-      "description": "Modifies the size and background opacity of the tooltip for items on the ground and in the inventory.",
+      "description": "Modify the size and background opacity of the tooltip for items on the ground and in the inventory.",
       "defaultValue": "none",
       "options": [
         { "label": "Disable", "value": "none" },
@@ -51,7 +51,7 @@
     {
       "id": "TooltipOpacity",
       "type": "number",
-      "minValue": 0.1,
+      "minValue": 0,
       "maxValue": 1,
       "name": "Tooltip: opacity",
       "description": "Set the tooltip background opacity (unmodded = 0.6).",
