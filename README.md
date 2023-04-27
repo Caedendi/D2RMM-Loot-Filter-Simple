@@ -69,7 +69,7 @@ In addition to this, I recommend you also use the following D2RMM mods:
 
 ## Roadmap
 
-- [x] Finish mod
+- [x] Finish code
 - [x] Document mod
   - [x] JSON descriptions
   - [x] Finish README
@@ -101,13 +101,13 @@ Many thanks to:
 ### Code
 - [Practical Item Filter for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/317) for acting as a base to build upon and the tooltip customization features
 - [olegbl](https://github.com/olegbl) for:
-  - creating [D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/169)
-  - his [example mods](https://github.com/olegbl/d2rmm.mods) in general
-  - his [Short Potion Names](https://www.nexusmods.com/diablo2resurrected/mods/177) mod for the list of colors
+  - Creating [D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/169).
+  - His [example mods](https://github.com/olegbl/d2rmm.mods) in general.
+  - His [Short Potion Names](https://www.nexusmods.com/diablo2resurrected/mods/177) mod for the list of colors.
 
 ### Filter Style
-- [Path of Diablo filters](https://pathofdiablo.com/wiki/index.php?title=List_of_Loot_Filters) for removing all that clutter on Path of Diablo and inspiring me to create this loot filter for D2R
-  - Mainly [Darkgale](https://www.twitch.tv/darkgale)'s filter called [Filtergale](https://www.reddit.com/r/pathofdiablo/comments/i9hdw7/filtergale/) ([download](https://greendu.de/s/ZbDwHekAg3rmeRB/download?path=%2F&files=item.filter)) regarding styling
+- [Path of Diablo filters](https://pathofdiablo.com/wiki/index.php?title=List_of_Loot_Filters) for removing all that clutter on Path of Diablo and inspiring me to create this loot filter for D2R.
+  - Mainly [Darkgale](https://www.twitch.tv/darkgale)'s filter called [Filtergale](https://www.reddit.com/r/pathofdiablo/comments/i9hdw7/filtergale/) ([download](https://greendu.de/s/ZbDwHekAg3rmeRB/download?path=%2F&files=item.filter)) regarding styling.
 - [Practical Item Filter for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/317)
 
 
