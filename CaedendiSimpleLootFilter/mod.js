@@ -120,6 +120,8 @@ const customItems = {
   aqv: `${GRAY}o ${WHITE}Arrows`, // Arrow Quiver
   cqv: `${GRAY}o ${WHITE}Bolts`, // Crossbow Bolt Quiver
 
+  // key: HIDDEN, // Regular key for locked chests
+
   //=============//
   //   Jewelry   //   BUGGED: crafted/rare/set/unique jewelry and charms show up as blue
   //=============//
