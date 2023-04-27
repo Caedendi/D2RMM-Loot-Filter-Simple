@@ -65,6 +65,12 @@ const HIDDEN = '' + ' '.repeat(config.HiddenItemTooltipSize);
 //=============//
 const customAffixes = {
   gld: `${GOLD1}G`, // Gold displays as "1234 G" with white numbers and gold-colored G.
+
+  // For some reason, the devs put these gems in the wrong JSON file.
+  gsw:  `${WHITE}o ${WHITE}Diamond`,  // Diamond
+  gsg:  `${GREEN}o ${WHITE}Emerald`,  // Emerald
+  gsr:    `${RED}o ${WHITE}Ruby`,     // Ruby
+  gsb:   `${BLUE}o ${WHITE}Sapphire`, // Sapphire
 };
 
 
@@ -143,10 +149,10 @@ const customItems = {
   gfy: `${YELLOW}o ${WHITE}Flawed`,   // Flawed Topaz
 
   gsv: `${PURPLE}o ${WHITE}Amethyst`, // Amethyst
-  gsw:  `${WHITE}o ${WHITE}Diamond`,  // Diamond
-  gsg:  `${GREEN}o ${WHITE}Emerald`,  // Emerald
-  gsr:    `${RED}o ${WHITE}Ruby`,     // Ruby
-  gsb:   `${BLUE}o ${WHITE}Sapphire`, // Sapphire
+  // gsw:  `${WHITE}o ${WHITE}Diamond`,  // Diamond    See Affixes ^ line 70
+  // gsg:  `${GREEN}o ${WHITE}Emerald`,  // Emerald    See Affixes ^ line 71
+  // gsr:    `${RED}o ${WHITE}Ruby`,     // Ruby       See Affixes ^ line 72
+  // gsb:   `${BLUE}o ${WHITE}Sapphire`, // Sapphire   See Affixes ^ line 73
   gsy: `${YELLOW}o ${WHITE}Topaz`,    // Topaz
 
   gzv: `${PURPLE}o ${WHITE}Flawless`, // Flawless Amethyst
@@ -172,13 +178,13 @@ const customItems = {
   //=======================//
   //   Pandemonium Event   //
   //=======================//
-  pk1: `${RED}***  ${ORANGE}Pandemonium Key 1  ${RED}***`, // Pandemonium Key 1 Key of Destruction
-  pk2: `${RED}***  ${ORANGE}Pandemonium Key 2  ${RED}***`, // Pandemonium Key 2 Key of Hate
-  pk3: `${RED}***  ${ORANGE}Pandemonium Key 3  ${RED}***`, // Pandemonium Key 3 Key of Terror
-  dhn: `${RED}***  ${ORANGE}Diablo's Horn  ${RED}***`,     // Diablo's Horn
-  bey: `${RED}***  ${ORANGE}Baal's Eye  ${RED}***`,        // Baal's Eye
-  mbr: `${RED}***  ${ORANGE}Mephisto's Brain  ${RED}***`,  // Mephisto's Brain
-  std: `${RED}* ${GOLD}Standard of Heroes ${RED}*`,        // Standard of Heroes
+  pk1: `${RED}***  ${ORANGE}Key of Terror  ${RED}***`,      // Pandemonium Key 1 Key of Terror
+  pk2: `${RED}***  ${ORANGE}Key of Hate  ${RED}***`,        // Pandemonium Key 2 Key of Hate
+  pk3: `${RED}***  ${ORANGE}Key of Destruction  ${RED}***`, // Pandemonium Key 3 Key of Destruction
+  dhn: `${RED}***  ${ORANGE}Diablo's Horn  ${RED}***`,      // Diablo's Horn
+  bey: `${RED}***  ${ORANGE}Baal's Eye  ${RED}***`,         // Baal's Eye
+  mbr: `${RED}***  ${ORANGE}Mephisto's Brain  ${RED}***`,   // Mephisto's Brain
+  std: `${RED}* ${GOLD}Standard of Heroes ${RED}*`,         // Standard of Heroes
   
   //======================//
   //   Token & Essences   //

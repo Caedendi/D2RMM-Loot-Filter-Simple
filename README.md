@@ -65,15 +65,18 @@ In addition to this, I recommend you also use the following D2RMM mods:
   - [ ] JSON descriptions
   - [ ] Finish README
 - [ ] Test
-  - [ ] verify keys
-  - [ ] verify gas/oil potions
+  - [x] verify keys
+  - [x] verify gas/oil potions
+  - [x] verify essences
 - [ ] Publish mod
   - [ ] Create pictures
   - [ ] Link pictures in README
   - [ ] Git tag + release
   - [ ] Publish on Nexus Mods
+  - [ ] Reddit post
 - [ ] Fix known bugs:
-  - [ ] Enabling jewelry turns crafted/rare/set/unique jewelry blue.
+  - [x] Loot filter not working for regular Ruby, Sapphire, Emerald and Diamond
+  - [ ] Enabling jewelry turns crafted/rare/set/unique jewelry blue
 - [ ] Add features:
   - [ ] Integrate [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214/?tab=files&category=archived) or [Show Item Quality for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/351)
   - [ ] different emphasis for unique charms, rare jewels and facets (rainbow color)

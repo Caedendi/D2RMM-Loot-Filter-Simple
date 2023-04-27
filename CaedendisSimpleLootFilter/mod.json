@@ -3,7 +3,7 @@
   "description": "A simple loot filter .",
   "author": "Caedendi",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/360",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "config": [
     {
       "id": "isGoldEnabled",
@@ -30,7 +30,7 @@
       "id": "HiddenItemTooltipSize",
       "type": "number",
       "name": "Tooltip width for hidden items",
-      "description": "Sets the width of the tooltip for hidden items by adding spaces if set to > 0. Max 100.",
+      "description": "Set how many spaces wide the tooltip for hidden items is (max 25).",
       "defaultValue": 0,
       "minValue": 0,
       "maxValue": 100
