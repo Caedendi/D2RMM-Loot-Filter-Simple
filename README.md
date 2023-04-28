@@ -11,6 +11,7 @@ If you don't want to modify .js files and rather have a shitload of presets, see
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Installation](#installation)
 - [Recommended Mods](#recommended-mods)
