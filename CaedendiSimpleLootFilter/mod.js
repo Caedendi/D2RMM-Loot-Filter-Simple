@@ -74,6 +74,46 @@ const customAffixes = {
 };
 
 
+//===========//
+//   Runes   //
+//===========//
+const customRunes = {
+  /*El   */ r01: `${ORANGE1}El (1)`,
+  /*Eld  */ r02: `${ORANGE1}Eld (2)`,
+  /*Tir  */ r03: `${ORANGE1}Tir (3)`,
+  /*Nef  */ r04: `${ORANGE1}Nef (4)`,
+  /*Eth  */ r05: `${ORANGE1}Eth (5)`,
+  /*Ith  */ r06: `${ORANGE1}Ith (6)`,
+  /*Tal  */ r07: `${ORANGE1}Tal (7)`,
+  /*Ral  */ r08: `${RED}**  ${ORANGE1}Ral (8)  ${RED}**`,
+  /*Ort  */ r09: `${ORANGE1}Ort (9)`,
+  /*Thul */ r10: `${ORANGE1}Thul (10)`,
+  /*Amn  */ r11: `${ORANGE1}Amn (11)`,
+  /*Sol  */ r12: `${ORANGE1}Sol (12)`,
+  /*Shael*/ r13: `${ORANGE1}Shael (13)`,
+  /*Dol  */ r14: `${ORANGE1}Dol (14)`,
+  /*Hel  */ r15: `${RED}**  ${ORANGE1}Hel (15) ${RED}*`,
+  /*Io   */ r16: `${ORANGE1}Io (16)`,
+  /*Lum  */ r17: `${ORANGE1}Lum (17)`,
+  /*Ko   */ r18: `${RED}**  ${ORANGE1}Ko (18)  ${RED}**`,
+  /*Fal  */ r19: `${RED}**  ${ORANGE1}Fal (19)  ${RED}**`,
+  /*Lem  */ r20: `${RED}**  ${ORANGE1}Lem (20)  ${RED}**`,
+  /*Pul  */ r21: `${RED}*****   ${ORANGE1}Pul (21)   ${RED}*****`,
+  /*Um   */ r22: `${RED}*****   ${ORANGE1}Um (22)   ${RED}*****`,
+  /*Mal  */ r23: `${RED}*****   ${ORANGE1}Mal (23)   ${RED}*****`,
+  /*Ist  */ r24: `${RED}*****   ${ORANGE1}Ist (24)   ${RED}*****`,
+  /*Gul  */ r25: `${RED}*****   ${ORANGE1}Gul (25)   ${RED}*****`,
+  /*Vex  */ r26: `${RED}**********     ${ORANGE1}Vex (26)     ${RED}**********`,
+  /*Ohm  */ r27: `${RED}**********     ${ORANGE1}Ohm (27)     ${RED}**********`,
+  /*Lo   */ r28: `${RED}**********     ${ORANGE1}Lo (28)     ${RED}**********`,
+  /*Sur  */ r29: `${RED}**********     ${ORANGE1}Sur (29)     ${RED}**********`,
+  /*Ber  */ r30: `${RED}**********     ${ORANGE1}Ber (30)     ${RED}**********`,
+  /*Jah  */ r31: `${RED}**********     ${ORANGE1}Jah (31)     ${RED}**********`,
+  /*Cham */ r32: `${RED}**********     ${ORANGE1}Cham (32)     ${RED}**********`,
+  /*Zod  */ r33: `${RED}**********     ${ORANGE1}Zod (33)     ${RED}**********`,
+};
+
+
 //==================//
 //   Custom Items   //
 //==================//
@@ -94,8 +134,8 @@ const customItems = {
   mp4: `${BLUE}+${WHITE}MP4`, // Greater Mana Potion
   mp5: `${BLUE}+${WHITE}MP5`, // Super Mana Potion
   
-  rvs: `${PURPLE}+${WHITE}S`, // Rejuvenation Potion
-  rvl: `${PURPLE}+${WHITE}F`, // Full Rejuvenation Potion
+  rvs: `${PURPLE}+${WHITE}SRP`, // Rejuvenation Potion
+  rvl: `${PURPLE}+${WHITE}FRP`, // Full Rejuvenation Potion
   
   yps: `${GREEN}+${WHITE}Antidote`, // Antidote Potion
   wms: `${GREEN}+${WHITE}Thawing`, // Thawing Potion
@@ -180,95 +220,57 @@ const customItems = {
   //=======================//
   //   Pandemonium Event   //
   //=======================//
-  pk1: `${RED}***  ${ORANGE}Key of Terror  ${RED}***`,      // Pandemonium Key 1 Key of Terror
-  pk2: `${RED}***  ${ORANGE}Key of Hate  ${RED}***`,        // Pandemonium Key 2 Key of Hate
-  pk3: `${RED}***  ${ORANGE}Key of Destruction  ${RED}***`, // Pandemonium Key 3 Key of Destruction
-  dhn: `${RED}***  ${ORANGE}Diablo's Horn  ${RED}***`,      // Diablo's Horn
-  bey: `${RED}***  ${ORANGE}Baal's Eye  ${RED}***`,         // Baal's Eye
-  mbr: `${RED}***  ${ORANGE}Mephisto's Brain  ${RED}***`,   // Mephisto's Brain
-  std: `${RED}* ${GOLD}Standard of Heroes ${RED}*`,         // Standard of Heroes
+  pk1: `${RED}*****   ${ORANGE}Key of Terror   ${RED}*****`,                  // Pandemonium Key 1 Key of Terror
+  pk2: `${RED}*****   ${ORANGE}Key of Hate   ${RED}*****`,                    // Pandemonium Key 2 Key of Hate
+  pk3: `${RED}*****   ${ORANGE}Key of Destruction   ${RED}*****`,             // Pandemonium Key 3 Key of Destruction
+  dhn: `${RED}**********     ${ORANGE}Diablo's Horn     ${RED}**********`,    // Diablo's Horn
+  bey: `${RED}**********     ${ORANGE}Baal's Eye     ${RED}**********`,       // Baal's Eye
+  mbr: `${RED}**********     ${ORANGE}Mephisto's Brain     ${RED}**********`, // Mephisto's Brain
+  std: `${RED}**  ${GOLD}Standard of Heroes  ${RED}**`,                       // Standard of Heroes
   
   //======================//
   //   Token & Essences   //
   //======================//
-  tes: `${RED}* ${ORANGE}Twisted Essence of Suffering ${RED}*`,     // Twisted Essence of Suffering
-  ceh: `${RED}* ${ORANGE}Charged Essense of Hatred ${RED}*`,        // Charged Essense of Hatred
-  bet: `${RED}* ${ORANGE}Burning Essence of Terror ${RED}*`,        // Burning Essence of Terror
-  fed: `${RED}* ${ORANGE}Festering Essence of Destruction ${RED}*`, // Festering Essence of Destruction
-  toa: `${RED}***  ${ORANGE}Token of Absolution  ${RED}***`,        // Token of Absolution
+  tes: `${RED}**  ${ORANGE}Twisted Essence of Suffering  ${RED}**`,     // Twisted Essence of Suffering
+  ceh: `${RED}**  ${ORANGE}Charged Essense of Hatred  ${RED}**`,        // Charged Essense of Hatred
+  bet: `${RED}**  ${ORANGE}Burning Essence of Terror  ${RED}**`,        // Burning Essence of Terror
+  fed: `${RED}**  ${ORANGE}Festering Essence of Destruction  ${RED}**`, // Festering Essence of Destruction
+  toa: `${RED}*****   ${ORANGE}Token of Absolution   ${RED}*****`,          // Token of Absolution
 
   //=================//
   //   Quest Items   //
   //=================//
   // Act 1
-  leg: `${RED}***  ${GOLD}Wirt's Leg  ${RED}***`,           // Wirt's Leg
-  hdm: `${RED}***  ${GOLD}Horadric Malus  ${RED}***`,       // Horadric Malus
-  bks: `${RED}***  ${GOLD}Scroll of Inifuss  ${RED}***`,    // Scroll of Inifuss
-  bkd: `${RED}***  ${GOLD}Scroll of Inifuss  ${RED}***`,    // Scroll of Inifuss (deciphered)
+  leg: `${RED}**********     ${GOLD}Wirt's Leg     ${RED}**********`,           // Wirt's Leg
+  hdm: `${RED}**********     ${GOLD}Horadric Malus     ${RED}**********`,       // Horadric Malus
+  bks: `${RED}**********     ${GOLD}Scroll of Inifuss     ${RED}**********`,    // Scroll of Inifuss
+  bkd: `${RED}**********     ${GOLD}Scroll of Inifuss     ${RED}**********`,    // Scroll of Inifuss (deciphered)
   // Act 2
-  ass: `${RED}***  ${GOLD}Book of Skill  ${RED}***`,        // Book of Skill
-  box: `${RED}***  ${GOLD}Horadric Cube  ${RED}***`,        // Horadric Cube
-  tr1: `${RED}***  ${GOLD}Horadric Scroll  ${RED}***`,      // Horadric Scroll
-  msf: `${RED}***  ${GOLD}Staff of Kings  ${RED}***`,       // Staff of Kings
-  vip: `${RED}***  ${GOLD}Amulet of the Viper  ${RED}***`,  // Amulet of the Viper
-  hst: `${RED}***  ${GOLD}Horadric Staff  ${RED}***`,       // Horadric Staff
+  ass: `${RED}**********     ${GOLD}Book of Skill     ${RED}**********`,        // Book of Skill
+  box: `${RED}**********     ${GOLD}Horadric Cube     ${RED}**********`,        // Horadric Cube
+  tr1: `${RED}**********     ${GOLD}Horadric Scroll     ${RED}**********`,      // Horadric Scroll
+  msf: `${RED}**********     ${GOLD}Staff of Kings     ${RED}**********`,       // Staff of Kings
+  vip: `${RED}**********     ${GOLD}Amulet of the Viper     ${RED}**********`,  // Amulet of the Viper
+  hst: `${RED}**********     ${GOLD}Horadric Staff     ${RED}**********`,       // Horadric Staff
   // Act 3
-  xyz: `${RED}***  ${GOLD}Potion of Life  ${RED}***`,       // Potion of Life
-  j34: `${RED}***  ${GOLD}A Jade Figurine  ${RED}***`,      // A Jade Figurine
-  g34: `${RED}***  ${GOLD}The Golden Bird  ${RED}***`,      // The Golden Bird
-  bbb: `${RED}***  ${GOLD}Lam Esen's Tome  ${RED}***`,      // Lam Esen's Tome
-  g33: `${RED}***  ${GOLD}The Gidbinn  ${RED}***`,          // The Gidbinn
-  qf1: `${RED}***  ${GOLD}Khalim's Flail  ${RED}***`,       // Khalim's Flail
-  qf2: `${RED}***  ${GOLD}Khalim's Will  ${RED}***`,        // Khalim's Will
-  qey: `${RED}***  ${GOLD}Khalim's Eye  ${RED}***`,         // Khalim's Eye
-  qhr: `${RED}***  ${GOLD}Khalim's Heart  ${RED}***`,       // Khalim's Heart
-  qbr: `${RED}***  ${GOLD}Khalim's Brain  ${RED}***`,       // Khalim's Brain
-  mss: `${RED}***  ${GOLD}Mephisto's Soulstone  ${RED}***`, // Mephisto's Soulstone
+  xyz: `${RED}**********     ${GOLD}Potion of Life     ${RED}**********`,       // Potion of Life
+  j34: `${RED}**********     ${GOLD}A Jade Figurine     ${RED}**********`,      // A Jade Figurine
+  g34: `${RED}**********     ${GOLD}The Golden Bird     ${RED}**********`,      // The Golden Bird
+  bbb: `${RED}**********     ${GOLD}Lam Esen's Tome     ${RED}**********`,      // Lam Esen's Tome
+  g33: `${RED}**********     ${GOLD}The Gidbinn     ${RED}**********`,          // The Gidbinn
+  qf1: `${RED}**********     ${GOLD}Khalim's Flail     ${RED}**********`,       // Khalim's Flail
+  qf2: `${RED}**********     ${GOLD}Khalim's Will     ${RED}**********`,        // Khalim's Will
+  qey: `${RED}**********     ${GOLD}Khalim's Eye     ${RED}**********`,         // Khalim's Eye
+  qhr: `${RED}**********     ${GOLD}Khalim's Heart     ${RED}**********`,       // Khalim's Heart
+  qbr: `${RED}**********     ${GOLD}Khalim's Brain     ${RED}**********`,       // Khalim's Brain
+  mss: `${RED}**********     ${GOLD}Mephisto's Soulstone     ${RED}**********`, // Mephisto's Soulstone
   // Act 4
-  hfh: `${RED}***  ${GOLD}Hellforge Hammer  ${RED}***`,     // Hellforge Hammer
+  hfh: `${RED}**********     ${GOLD}Hellforge Hammer     ${RED}**********`,     // Hellforge Hammer
   // Act 5
-  ice: `${RED}***  ${GOLD}Malah's Potion  ${RED}***`,       // Malah's Potion
-  tr2: `${RED}***  ${GOLD}Scroll of Resistance  ${RED}***`, // Scroll of Resistance
+  ice: `${RED}**********     ${GOLD}Malah's Potion     ${RED}**********`,       // Malah's Potion
+  tr2: `${RED}**********     ${GOLD}Scroll of Resistance     ${RED}**********`, // Scroll of Resistance
 };
 
-//===========//
-//   Runes   //
-//===========//
-const customRunes = {
-  /*El   */ r01: `${ORANGE1}El ${WHITE}[${RED}1${WHITE}]`,
-  /*Eld  */ r02: `${ORANGE1}Eld ${WHITE}[${RED}2${WHITE}]`,
-  /*Tir  */ r03: `${ORANGE1}Tir ${WHITE}[${RED}3${WHITE}]`,
-  /*Nef  */ r04: `${ORANGE1}Nef ${WHITE}[${RED}4${WHITE}]`,
-  /*Eth  */ r05: `${ORANGE1}Eth ${WHITE}[${RED}5${WHITE}]`,
-  /*Ith  */ r06: `${ORANGE1}Ith ${WHITE}[${RED}6${WHITE}]`,
-  /*Tal  */ r07: `${ORANGE1}Tal ${WHITE}[${RED}7${WHITE}]`,
-  /*Ral  */ r08: `${RED}* ${ORANGE1}Ral ${WHITE}[${RED}8${WHITE}] ${RED}*`,
-  /*Ort  */ r09: `${ORANGE1}Ort ${WHITE}[${RED}9${WHITE}]`,
-  /*Thul */ r10: `${ORANGE1}Thul ${WHITE}[${RED}10${WHITE}]`,
-  /*Amn  */ r11: `${ORANGE1}Amn ${WHITE}[${RED}11${WHITE}]`,
-  /*Sol  */ r12: `${ORANGE1}Sol ${WHITE}[${RED}12${WHITE}]`,
-  /*Shael*/ r13: `${ORANGE1}Shael ${WHITE}[${RED}13${WHITE}]`,
-  /*Dol  */ r14: `${ORANGE1}Dol ${WHITE}[${RED}14${WHITE}]`,
-  /*Hel  */ r15: `${RED}* ${ORANGE1}Hel ${WHITE}[${RED}15${WHITE}] ${RED}*`,
-  /*Io   */ r16: `${RED}* ${ORANGE1}Io ${WHITE}[${RED}16${WHITE}] ${RED}*`,
-  /*Lum  */ r17: `${RED}* ${ORANGE1}Lum ${WHITE}[${RED}17${WHITE}] ${RED}*`,
-  /*Ko   */ r18: `${RED}* ${ORANGE1}Ko ${WHITE}[${RED}18${WHITE}] ${RED}*`,
-  /*Fal  */ r19: `${RED}* ${ORANGE1}Fal ${WHITE}[${RED}19${WHITE}] ${RED}*`,
-  /*Lem  */ r20: `${RED}* ${ORANGE1}Lem ${WHITE}[${RED}20${WHITE}] ${RED}*`,
-  /*Pul  */ r21: `${RED}***  ${ORANGE1}Pul ${WHITE}[${RED}21${WHITE}]  ${RED}***`,
-  /*Um   */ r22: `${RED}***  ${ORANGE1}Um ${WHITE}[${RED}22${WHITE}]  ${RED}***`,
-  /*Mal  */ r23: `${RED}***  ${ORANGE1}Mal ${WHITE}[${RED}23${WHITE}]  ${RED}***`,
-  /*Ist  */ r24: `${RED}***  ${ORANGE1}Ist ${WHITE}[${RED}24${WHITE}]  ${RED}***`,
-  /*Gul  */ r25: `${RED}***  ${ORANGE1}Gul ${WHITE}[${RED}25${WHITE}]  ${RED}***`,
-  /*Vex  */ r26: `${RED}*****   ${ORANGE1}Vex ${WHITE}[${RED}26${WHITE}]   ${RED}*****`,
-  /*Ohm  */ r27: `${RED}*****   ${ORANGE1}Ohm ${WHITE}[${RED}27${WHITE}]   ${RED}*****`,
-  /*Lo   */ r28: `${RED}*****   ${ORANGE1}Lo ${WHITE}[${RED}28${WHITE}]   ${RED}*****`,
-  /*Sur  */ r29: `${RED}*****   ${ORANGE1}Sur ${WHITE}[${RED}29${WHITE}]   ${RED}*****`,
-  /*Ber  */ r30: `${RED}*****   ${ORANGE1}Ber ${WHITE}[${RED}30${WHITE}]   ${RED}*****`,
-  /*Jah  */ r31: `${RED}*****   ${ORANGE1}Jah ${WHITE}[${RED}31${WHITE}]   ${RED}*****`,
-  /*Cham */ r32: `${RED}*****   ${ORANGE1}Cham ${WHITE}[${RED}32${WHITE}]   ${RED}*****`,
-  /*Zod  */ r33: `${RED}*****   ${ORANGE1}Zod ${WHITE}[${RED}33${WHITE}]   ${RED}*****`,
-};
 
 function applyLootFilter() {
   applyItemNameMods();
