@@ -23,17 +23,9 @@ If you don't want to modify .js files and rather have a shitload of presets, see
 
 ## Screenshots
 
-<img src="https://i.imgur.com/3FsggaT.png" alt="01_pots_scrolls_gold" width="25%">
-
-<img src="https://i.imgur.com/eJ8EyNk.png" alt="02_gems_quest_endgame" width="25%">
-
-<img src="https://i.imgur.com/7jkSd0G.png" alt="03_runes_numbers_highlights_no-affix" width="25%">
-
-<img src="https://i.imgur.com/MqSDQ8T.png" alt="04_Code1" width="25%">
-
-<img src="https://i.imgur.com/jHW08sC.png" alt="5_Code2" width="25%">
-
-<img src="https://i.imgur.com/cg4q3iK.png" alt="06_Code3" width="25%">
+<img src="https://i.imgur.com/3FsggaT.png" alt="01_pots_scrolls_gold" width="640">
+<img src="https://i.imgur.com/eJ8EyNk.png" alt="02_gems_quest_endgame" width="640">
+<img src="https://i.imgur.com/7jkSd0G.png" alt="03_runes_numbers_highlights_no-affix" width="640">
 
 
 ## Features
