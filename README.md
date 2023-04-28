@@ -22,7 +22,9 @@ If you don't want to modify .js files and rather have a shitload of presets, see
 
 
 ## Screenshots
-
+<p align="center">
+  <img src="https://i.imgur.com/3FsggaT.png" alt="01_pots_scrolls_gold">
+</p>
 <img src="https://i.imgur.com/3FsggaT.png" alt="01_pots_scrolls_gold" width="640">
 <img src="https://i.imgur.com/eJ8EyNk.png" alt="02_gems_quest_endgame" width="640">
 <img src="https://i.imgur.com/7jkSd0G.png" alt="03_runes_numbers_highlights_no-affix" width="640">
