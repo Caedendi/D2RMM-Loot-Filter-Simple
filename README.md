@@ -21,6 +21,16 @@ If you don't want to modify .js files and rather have a shitload of presets, see
 - [License/Permissions](#licensepermissions)
 
 
+## Screenshots
+
+<img src="https://imgur.com/3FsggaT" alt="01_pots_scrolls_gold" width="50%">
+<img src="https://imgur.com/eJ8EyNk" alt="02_gems_quest_endgame" width="50%">
+<img src="https://imgur.com/7jkSd0G" alt="03_runes_numbers_highlights_no-affix" width="50%">
+<img src="https://imgur.com/MqSDQ8T" alt="04_Code1" width="50%">
+<img src="https://imgur.com/jHW08sC" alt="5_Code2" width="50%">
+<img src="https://imgur.com/cg4q3iK" alt="06_Code3" width="50%">
+
+
 ## Features
 
 - **Customize to your liking:**
@@ -78,7 +88,7 @@ In addition to this, I recommend you also use the following D2RMM mods:
   - [x] verify gas/oil potions
   - [x] verify essences
 - [ ] Publish mod
-  - [ ] Create pictures
+  - [x] Create pictures
   - [ ] Link pictures in README
   - [ ] Git tag + release
   - [ ] Publish on Nexus Mods
