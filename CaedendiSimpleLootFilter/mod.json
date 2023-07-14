@@ -27,6 +27,13 @@
       "defaultValue": true
     },
     {
+      "id": "IsCubeEnabled",
+      "type": "checkbox",
+      "name": "Exclude Horadric Cube",
+      "description": "Exclude Horadric Cube highlighting to prevent ",
+      "defaultValue": true
+    },
+    {
       "id": "HiddenItemTooltipSize",
       "type": "number",
       "name": "Tooltip width for hidden items",

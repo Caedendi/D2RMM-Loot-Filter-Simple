@@ -88,7 +88,7 @@ In addition to this, I recommend you also use the following D2RMM mods:
 - [ ] Add features:
   - [ ] Integrate [Show Item Level](https://www.nexusmods.com/diablo2resurrected/mods/174) by olegbl
   - [ ] Integrate [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214/?tab=files&category=archived) or [Show Item Quality for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/351)
-  - [ ] different emphasis for unique charms, rare jewels and facets (rainbow color)
+  - [ ] Different emphasis for unique charms, rare jewels and facets (rainbow color)
 
 
 ## Credits
