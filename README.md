@@ -71,7 +71,7 @@ First official release!
 ## Features
 
 - **Customize to your liking:**
-  - Use this filter as a template to apply your own custom naming schemes. Just open the mod.js file in Notepad and change whatever items you'd like.
+  - Use this filter as a template to apply your own custom naming schemes. Just open the mod.js file in Notepad or VSCodium and change whatever items you'd like.
   - To hide an item, change its name to HIDDEN (without quotes). The value of HIDDEN (amount of spaces) can be changed in the D2RMM settings.
   - Don't forget to reload and apply in D2RMM!
 - **Completely optional:** 
