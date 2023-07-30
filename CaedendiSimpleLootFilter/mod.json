@@ -3,8 +3,14 @@
   "description": "Adds a simple customizable loot filter to Diablo 2: Resurrected using D2RMM.",
   "author": "Caedendi",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/360",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "config": [
+    {
+      "id": "ItemsSection",
+      "type": "section",
+      "name": "Items",
+      "defaultExpanded": false
+    },
     {
       "id": "IsGoldEnabled",
       "type": "checkbox",
@@ -20,18 +26,66 @@
       "defaultValue": true
     },
     {
-      "id": "IsItemsEnabled",
+      "id": "IsJunkEnabled",
       "type": "checkbox",
-      "name": "Items",
+      "name": "Junk",
       "description": "Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows, gems, essences/tokens, Pandomonium Event and quest items.",
       "defaultValue": true
     },
     {
-      "id": "IsCubeEnabled",
+      "id": "IsGemsEnabled",
+      "type": "checkbox",
+      "name": "Gems",
+      "description": "Customize the tooltips for gems.",
+      "defaultValue": true
+    },
+    {
+      "id": "IsJewelryEnabled",
+      "type": "checkbox",
+      "name": "Jewelry",
+      "description": "Customize the tooltips for amulets, rings and jewels.",
+      "defaultValue": true
+    },
+    {
+      "id": "IsCharmsEnabled",
+      "type": "checkbox",
+      "name": "Charms",
+      "description": "Customize the tooltips for charms.",
+      "defaultValue": true
+    },
+    {
+      "id": "IsQuestEnabled",
+      "type": "checkbox",
+      "name": "Quest Items",
+      "description": "Customize the tooltips for quest items.",
+      "defaultValue": true
+    },
+    {
+      "id": "ShouldExcludeCube",
       "type": "checkbox",
       "name": "Exclude Horadric Cube",
-      "description": "Exclude Horadric Cube highlighting to prevent ",
+      "description": "Exclude Horadric Cube highlighting to fix messing up the cube window's title and some NPC dialog where it is mentioned.",
       "defaultValue": true
+    },
+    {
+      "id": "IsEndgameEnabled",
+      "type": "checkbox",
+      "name": "Endgame Items",
+      "description": "Customize the tooltips for keys, organs, essences, token of absolution and standard of heroes.",
+      "defaultValue": true
+    },
+    {
+      "id": "ShortSupInf",
+      "type": "checkbox",
+      "name": "Short Superior/Inferior Prefixes",
+      "description": "Shorten the Superior/Damaged/Cracked/Crude/Low Quality modifiers on weapons and armor to + (plus) and - (minus/dash). Works the same as mod Short Quality Prefixes by Jobus.",
+      "defaultValue": true
+    },
+    {
+      "id": "TooltipSection",
+      "type": "section",
+      "name": "Tooltip Mods",
+      "defaultExpanded": false
     },
     {
       "id": "HiddenItemTooltipSize",
