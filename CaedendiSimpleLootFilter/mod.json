@@ -29,7 +29,7 @@
       "id": "IsJunkEnabled",
       "type": "checkbox",
       "name": "Junk",
-      "description": "Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows, gems, essences/tokens, Pandomonium Event and quest items.",
+      "description": "Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows and keys.",
       "defaultValue": true
     },
     {
