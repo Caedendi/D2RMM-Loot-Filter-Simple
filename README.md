@@ -90,13 +90,16 @@ First official release!
 
 ## Roadmap
 
-- [ ] Fix known bugs:
-  - [x] Regular Ruby, Sapphire, Emerald and Diamond not working
-  - [ ] Enabling jewelry turns crafted/rare/set/unique jewelry blue
-- [ ] Add features:
-  - [ ] Integrate [Show Item Level](https://www.nexusmods.com/diablo2resurrected/mods/174) by olegbl
-  - [ ] Integrate [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214/?tab=files&category=archived) or [Show Item Quality for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/351)
-  - [ ] Different emphasis for unique charms, rare jewels and facets (rainbow color)
+### Fix known bugs
+
+- [x] Regular Ruby, Sapphire, Emerald and Diamond not working
+- [x] Certain quest item customization not working
+- [x] Enabling quest item highlighting screws up the Horadric Cube's displayed name when the cube menu is open.
+- [x] Enabling jewelry turns crafted/rare/set/unique jewelry blue
+
+### Add features
+
+- [x] Integrate [Short Quality Prefixes for D2RMM](https://www.nexusmods.com/diablo2resurrected/mods/214) by [Jobus](https://www.nexusmods.com/diablo2resurrected/users/3107665)
 
 
 ## Recommended Mods
