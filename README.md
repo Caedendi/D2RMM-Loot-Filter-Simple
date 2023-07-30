@@ -90,6 +90,8 @@ First official release!
 
 ## Roadmap
 
+None at the moment. If you have a request for a feature, please open a GitHub issue (preferred) or post a comment on Nexus Mods.
+
 ### Fix known bugs
 
 - [x] Regular Ruby, Sapphire, Emerald and Diamond not working
