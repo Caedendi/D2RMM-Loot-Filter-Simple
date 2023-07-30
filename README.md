@@ -74,18 +74,12 @@ First official release!
   - Use this filter as a template to apply your own custom naming schemes. Just open the mod.js file in Notepad or VSCodium and change whatever items you'd like.
   - To hide an item, change its name to HIDDEN (without quotes). The value of HIDDEN (amount of spaces) can be changed in the D2RMM settings.
   - Don't forget to reload and apply in D2RMM!
-- **Completely optional:** 
-  - Untoggling everything means no modding will be applied
-- **Gold:** 
-  - Shrink the "Gold"-affix to a gold-colored "G".
-- **Runes:** 
-  - Remove the "Rune" affix, add rune numbers and highlight important runes.
-- **Items:** 
-  - Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows, gems, charms, facets, essences/tokens, Pandomonium Event - and quest items.
-- **Short Superior/Inferior prefixes:** 
-  - Shorten superior/inferior prefixes to + and -.
-- **Item tooltip customization:**
-  - Modify the size and background opacity of the tooltip for items on the ground and in the inventory.
+- **Completely optional:** Untoggling everything means no modding will be applied.
+- **Gold:** Shrink the "Gold"-affix to a gold-colored "G".
+- **Runes:** Remove the "Rune" affix, add rune numbers and highlight important runes.
+- **Items:** Shrink, highlight and color the tooltips for potions, scrolls/tomes, bolts/arrows, gems, charms, facets, essences/tokens, Pandomonium Event - and quest items.
+- **Short Superior/Inferior prefixes:** Shorten superior/inferior prefixes to + and -.
+- **Item tooltip customization:** Modify the size and background opacity of the tooltip for items on the ground and in the inventory.
 
 
 ## Roadmap
