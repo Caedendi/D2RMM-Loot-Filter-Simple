@@ -267,13 +267,13 @@ const customItemNames = {
     //=======================//
     //   Pandemonium Event   //
     //=======================//
-    this.items.pk1 = `${RED}**********${ORANGE}     Key of Terror     ${RED}**********${ORANGE}`;                  // Pandemonium Key 1 Key of Terror
-    this.items.pk2 = `${RED}**********${ORANGE}     Key of Hate     ${RED}**********${ORANGE}`;                    // Pandemonium Key 2 Key of Hate
-    this.items.pk3 = `${RED}**********${ORANGE}     Key of Destruction     ${RED}**********${ORANGE}`;             // Pandemonium Key 3 Key of Destruction
-    this.items.dhn = `${RED}**********${ORANGE}     Diablo's Horn     ${RED}**********${ORANGE}`;    // Diablo's Horn
-    this.items.bey = `${RED}**********${ORANGE}     Baal's Eye     ${RED}**********${ORANGE}`;       // Baal's Eye
-    this.items.mbr = `${RED}**********${ORANGE}     Mephisto's Brain     ${RED}**********${ORANGE}`; // Mephisto's Brain
-    this.items.std = `${RED}*****${GOLD}   Standard of Heroes   ${RED}*****${GOLD}`;                       // Standard of Heroes
+    this.items.pk1 = `${RED}**********${ORANGE}     Key of Terror     ${RED}**********${ORANGE}`;      // Pandemonium Key 1 Key of Terror
+    this.items.pk2 = `${RED}**********${ORANGE}     Key of Hate     ${RED}**********${ORANGE}`;        // Pandemonium Key 2 Key of Hate
+    this.items.pk3 = `${RED}**********${ORANGE}     Key of Destruction     ${RED}**********${ORANGE}`; // Pandemonium Key 3 Key of Destruction
+    this.items.dhn = `${RED}**********${ORANGE}     Diablo's Horn     ${RED}**********${ORANGE}`;      // Diablo's Horn
+    this.items.bey = `${RED}**********${ORANGE}     Baal's Eye     ${RED}**********${ORANGE}`;         // Baal's Eye
+    this.items.mbr = `${RED}**********${ORANGE}     Mephisto's Brain     ${RED}**********${ORANGE}`;   // Mephisto's Brain
+    this.items.std = `${RED}*****${GOLD}   Standard of Heroes   ${RED}*****${GOLD}`;                   // Standard of Heroes
     
     //======================//
     //   Token & Essences   //
@@ -282,7 +282,7 @@ const customItemNames = {
     this.items.ceh = `${RED}*****${ORANGE}   Charged Essense of Hatred   ${RED}*****${ORANGE}`;        // Charged Essense of Hatred
     this.items.bet = `${RED}*****${ORANGE}   Burning Essence of Terror   ${RED}*****${ORANGE}`;        // Burning Essence of Terror
     this.items.fed = `${RED}*****${ORANGE}   Festering Essence of Destruction   ${RED}*****${ORANGE}`; // Festering Essence of Destruction
-    this.items.toa = `${RED}*****${ORANGE}   Token of Absolution   ${RED}*****${ORANGE}`;          // Token of Absolution
+    this.items.toa = `${RED}*****${ORANGE}   Token of Absolution   ${RED}*****${ORANGE}`;              // Token of Absolution
   },
 
   //=================//
@@ -311,7 +311,7 @@ const customItemNames = {
     this.items.qbr = `${RED}**********${GOLD}     Khalim's Brain     ${RED}**********${GOLD}`;       // Khalim's Brain
     this.items.mss = `${RED}**********${GOLD}     Mephisto's Soulstone     ${RED}**********${GOLD}`; // Mephisto's Soulstone
     // Act 4
-    this.items.hfh = `${RED}**********${GOLD}     Hell Forge Hammer     ${RED}**********${GOLD}`;     // Hell Forge Hammer
+    this.items.hfh = `${RED}**********${GOLD}     Hell Forge Hammer     ${RED}**********${GOLD}`;    // Hell Forge Hammer
     // Act 5
     
     // Extra
@@ -325,7 +325,7 @@ const customItemNames = {
   },
 
   customizeCube() {
-    this.items.box = `${RED}**********${GOLD}     Horadric Cube     ${RED}**********${GOLD}`;
+    this.items.box = `${RED}**********${GOLD}     Horadric Cube     ${RED}**********${GOLD}`; // Horadric Cube
   }
 };
 
